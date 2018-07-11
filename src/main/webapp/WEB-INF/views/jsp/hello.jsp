@@ -10,8 +10,9 @@
     <link href="${bootstrapCss}" rel="stylesheet" />
     <link href="${coreCss}" rel="stylesheet" />
 </head>
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<body>
+logging
+<%--<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">Spring 3 MVC Project</a>
@@ -62,7 +63,7 @@
     <footer>
         <p>© Mkyong.com 2015</p>
     </footer>
-</div>
+</div>--%>
 
 
 </body>
