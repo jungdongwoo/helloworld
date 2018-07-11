@@ -31,4 +31,6 @@ public class HelloController {
         return model;
 
     }
+
+    //test db connection here
 }
