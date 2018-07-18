@@ -18,4 +18,5 @@ public class MvcWebApplicationInitializer extends AbstractAnnotationConfigDispat
     protected String[] getServletMappings() {
         return new String[] { "/" };
     }
+
 }

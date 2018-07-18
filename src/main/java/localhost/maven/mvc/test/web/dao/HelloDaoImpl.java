@@ -14,7 +14,7 @@ import java.util.List;
 @Repository
 public class HelloDaoImpl implements HelloDao {
 
-    @Autowired
+    @Autowired // if omit then session will be null
     private SessionFactory sessionFactory;
 
     public void setSessionFactory(SessionFactory sessionFactory) {

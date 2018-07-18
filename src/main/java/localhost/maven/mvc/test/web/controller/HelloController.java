@@ -16,12 +16,16 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 
 @Controller()
+@RequestMapping("/hello")
 public class HelloController {
 
     private static final Logger logger = LoggerFactory.getLogger(HelloController.class);
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/firsttest", method = RequestMethod.GET)
     public String printWelcome(Model model) {
+        logger.info("First method :: ");
+
+
 
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(AppConfig.class);
@@ -46,11 +50,13 @@ public class HelloController {
         return "hello";
     }
 
-    @RequestMapping(value = "/hello/{name:/.+}", method = RequestMethod.GET)
-    public ModelAndView hello(@PathVariable("name") String name) {
+    @RequestMapping(value = "/secondtest", method = RequestMethod.GET)
+    public ModelAndView hello() {
+        logger.info("Second method :: ");
+        logger.info("/hello/{name:/.+}");
         ModelAndView model = new ModelAndView();
         model.setViewName("hello");
-        model.addObject("msg", name);
+        model.addObject("msg", "testname");
 
         return model;
 
