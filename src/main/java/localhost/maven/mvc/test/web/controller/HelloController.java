@@ -24,6 +24,7 @@ public class HelloController {
     @RequestMapping(value = "/firsttest", method = RequestMethod.GET)
     public String printWelcome(Model model) {
         logger.info("First method :: ");
+        logger.info("First method :: ");
 
 
 
