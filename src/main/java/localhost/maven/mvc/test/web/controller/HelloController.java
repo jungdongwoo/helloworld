@@ -48,7 +48,7 @@ public class HelloController {
         model.addAttribute("message", "Hello world");
         logger.info("Hello logger test:: ");
         logger.trace("logger trace :: ");
-        return "hello";
+        return "jsp/hello";
     }
 
     @RequestMapping(value = "/secondtest", method = RequestMethod.GET)
@@ -56,7 +56,7 @@ public class HelloController {
         logger.info("Second method :: ");
         logger.info("/hello/{name:/.+}");
         ModelAndView model = new ModelAndView();
-        model.setViewName("hello");
+        model.setViewName("jsp/hello");
         model.addObject("msg", "testname");
 
         return model;

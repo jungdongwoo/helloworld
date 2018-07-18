@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
-        registry.jsp().prefix("/WEB-INF/views/jsp/").suffix(".jsp");
+        registry.jsp().prefix("/WEB-INF/views/").suffix(".jsp");
     }
 
     /*@Override
